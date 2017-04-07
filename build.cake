@@ -42,7 +42,7 @@ Task("UpdateAppVeyorBuildNumber")
 });
 
 Task("Restore").Does(() => {
-	NuGetRestore(sln, new NuGetRestoreSettings() { ToolPath = @"c:\tools\nuget\nuget.exe" });
+	NuGetRestore(sln);
 });
 
 Task("Build")
